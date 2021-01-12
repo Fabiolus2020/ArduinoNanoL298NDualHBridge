@@ -11,4 +11,6 @@ https://github.com/Fabiolus2020/ArduinoNanoL298NDualHBridge
 1 x L298N h Dual Bridge motor controller
 
 reference:
+https://dronebotworkshop.com/
+https://howtomechatronics.com/
 http://www.handsontec.com/dataspecs/L298N%20Motor%20Driver.pdf
