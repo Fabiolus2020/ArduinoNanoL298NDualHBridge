@@ -3,7 +3,7 @@
 Project #7
 
 Youtube https://youtu.be/BYWxGKmLKrE
-https://github.com/Fabiolus2020/ArduinoNanoL298NDualHBridge
+
 
 1 Arduino Nano
 1x joystick
