@@ -113,8 +113,8 @@ void loop() {
 
  //   // Adjust to prevent "buzzing" at very low speed
 
- // if (motor_speed1 < 10)motor_speed1 = 0;
- // if (motor_speed2 < 10)motor_speed2 = 0;
+  if (motor_speed1 < 20)motor_speed1 = 0;
+  if (motor_speed2 < 20)motor_speed2 = 0;
 
 
 //  Serial.print("X: ");
