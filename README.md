@@ -1,4 +1,4 @@
-# ArduinoNanoL298NDualHBridge
+# Arduino Nano L298N Dual H Bridge 1Joystick 2Motors
 
 Project #7
 
