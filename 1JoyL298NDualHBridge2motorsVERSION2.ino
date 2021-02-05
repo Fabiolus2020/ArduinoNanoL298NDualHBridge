@@ -75,14 +75,9 @@ void loop() {
 
 
 
-  else if (x_pos > 400 && x_pos < 600) { //Motors will not move when the joystick will be at center
-    digitalWrite(IN1, LOW);
-    digitalWrite(IN2, LOW);
-    digitalWrite(IN3, LOW);
-    digitalWrite(IN4, LOW);
-  }
 
-  if (y_pos > 525) {    //Rotating direction FORWARD and BACKWARD BOTH MOTORS PUSHING JOYSTICK RIGHT
+
+ else if (y_pos > 525) {    //Rotating direction FORWARD and BACKWARD BOTH MOTORS PUSHING JOYSTICK RIGHT
     motor_speed1 = map(y_pos, 525, 1023, 0, 255);   //Mapping the values to 0-255 to move the motor
     motor_speed2 = map(y_pos, 525, 1023, 0, 255);   //Mapping the values to 0-255 to move the motor
     digitalWrite(IN1, LOW);
@@ -106,7 +101,15 @@ void loop() {
     analogWrite(EN_B, motor_speed2);
   }
 
-
+else 
+{
+    digitalWrite(IN1, LOW);
+    digitalWrite(IN2, LOW);
+    digitalWrite(IN3, LOW);
+    digitalWrite(IN4, LOW);
+    motor_speed1 = 0;
+    motor_speed2 = 0;
+}
   //   // Adjust to prevent "buzzing" at very low speed
 
   if (motor_speed1 < 20)motor_speed1 = 0;
